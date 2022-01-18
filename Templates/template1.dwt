@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="../stylesheet.css">
 <!-- TemplateBeginEditable name="head" -->
 <link type="text/css" rel="stylesheet" href="../styles/lightslider.css">
-<link href="../styles/owl.carousel.min.css">
 <!-- TemplateEndEditable -->
 <script type="text/javascript" src="../scripts/jquery-3.6.0.min.js"></script>
 </head>
@@ -19,7 +18,7 @@
   <nav class="nav content-wd">
     <div id="logo"><img src="../images/logo1.png"  width="125" height="53" alt="logo"></div>
     <ul>
-      <li class="Home"><a href="../home.html">Home</a> </li>
+      <li class="Home"><a href="../index.html">Home</a> </li>
       <li class="hasdropdown"><a href="../products.html">Our Products</a>
         <ul class="dropdown">
           <li><a href="../products.html">MOJITO</a></li>
@@ -36,35 +35,39 @@
       <li><a href="../whoweare-AboutUs.html">Who We Are</a> </li>
       <li><a href="../contactus.html">Contact us</a> </li>
     </ul>
-    <div class="icons"> <a href="#" class="icon-1">account-icon</a> <a href="#" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
+    <div class="icons"> <a href="#" class="icon-1">account-icon</a>
+      <div class="register"></div>
+      <a href="#" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
       <form action="#" class="search-form">
-        <input type="search" name="search" placeholder="Search..">
+        <input type="search" name="search" placeholder="Search Products..">
         <input type="submit" value="search">
       </form>
     </div>
   </nav>
 </header>
 <!-- TemplateBeginEditable name="EditRegion1" -->
-<div class="banner-bg">
-  <div class="content-wd" id="lightSlider">
-    <div class="banner">
-      <div class="banner-image"><img src="../images/product.png" alt="product"></div>
-      <div class="banner-text">
-        <h1>Nestled in the cradle of <br>
-          nature</h1>
+<section>
+  <div class="banner-bg">
+    <div class="content-wd" id="lightSlider">
+      <div class="banner">
+        <div class="banner-image"><img src="../images/product.png" alt="product"></div>
+        <div class="banner-text">
+          <h1>Nestled in the cradle of <br>
+            nature</h1>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="banner-image1 mm"></div>
+      </div>
+      <div class="banner">
+        <div class="banner-image2 mm"></div>
+      </div>
+      <div class="banner">
+        <div class="banner-image3 mm"></div>
       </div>
     </div>
-    <div class="banner">
-      <div class="banner-image1 mm"></div>
-    </div>
-    <div class="banner">
-      <div class="banner-image2 mm"></div>
-    </div>
-    <div class="banner">
-      <div class="banner-image3 mm"></div>
-    </div>
   </div>
-</div>
+</section>
 <section class="bggrey">
   <h2>About Us</h2>
   <div class="bgwhite">
@@ -79,8 +82,8 @@
 <section>
   <div class="bggrey">
     <h2>Our Product</h2>
-    <div class="product content-wd owl-carousel">
-      <div class="productbg"  > <img src="../images/Layer_15.png" alt="">
+    <div class="product content-wd " id="lightSlider2" >
+    <div class="productbg"><img src="../images/Layer_15.png" alt="">
         <h3>Raspberry</h3>
         <h4>Mojitos </h4>
         <p>₹215 500ml</p>
@@ -119,6 +122,7 @@
           <h4><a href="#" style="text-decoration: none;">Add to cart</a></h4>
         </div>
       </div>
+     
     </div>
   </div>
   <div class="orangebtn2"><a href="../products.html" class="orngbtn1">More Products</a></div>
@@ -162,7 +166,7 @@
         </div>
       </div>
       <div class="bg content-wd">
-        <div class="icon"><img src="../images/youtube_logo.png" alt=""></div>
+        <div class="icon"><a href="#"><img src="../images/youtube_logo.png" alt=""></a></div>
       </div>
     </div>
   </div>
@@ -176,7 +180,7 @@
         <hr>
       </div>
       <div class="footertext">
-        <p><a href="../home.html">Home </a>. <a href="../whoweare-AboutUs.html">About Us </a>. <a href="../reciepies.html" >Recipies </a> . <a href="notfound">Downloads </a> .<a href="notfound"> Distributors </a> .<a href="../contactus.html" > contact us </a> . <a href="#">my account</a> </p>
+        <p><a href="../index.html">Home </a>. <a href="../whoweare-AboutUs.html">About Us </a>. <a href="../reciepies.html" >Recipies </a> . <a href="notfound">Downloads </a> .<a href="notfound"> Distributors </a> .<a href="../contactus.html" > contact us </a> . <a href="#">my account</a> </p>
         <p  style="
     margin-left: 135px;
     margin-top: 40px;
@@ -205,31 +209,9 @@
 		loop: true,
 		pause: 4000		
 	}); 
-  });
-	</script>
-		<script src="../scripts/owl.carousel.min.js"></script> 
-<script>
-	$(document).ready(function(){
-      	$('.owl-carousel.banner').owlCarousel({
-            loop:true,
-            margin:0,
-            items: 1
-        });
-	  	$('.next-arrow').click(function() {
-            $('.owl-carousel').trigger('next.owl.carousel');
-        });
-		$('.prev-arrow').click(function() {
-            $('.owl-carousel').trigger('prev.owl.carousel');
-        });
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            items: 3
-        });
-      
-	</script> 
-
 	
+  });
+	</script> 
 <!-- TemplateEndEditable -->
 </body>
 </html>
