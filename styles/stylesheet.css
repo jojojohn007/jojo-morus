@@ -3,7 +3,63 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Be Vietnam Pro', sans-serif
+   
+}
+.float {
+    background-color: rgba(103, 48, 142, 0.99);
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    border-radius: 3px;
+    
+    margin-top: 45px;
+    font-size: 12px;
+	
+}
+.float h2 a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+input[type=number] {
+        text-align: center;
+    display: inline-block;
+    line-height: normal;
+    margin-left:70px;
+    font-size: 12px;
+	border-radius: 3px;
+}
+.border{
+	
+	border-bottom: solid 1px #BEB4B4;
+}
+.cartbg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    background-color: #FCF6F6;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-right: 215px;
+    margin-left: 215px;
+}
+.button {
+            margin-right: 34%;
+    margin-left: 32%;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: -18%;
+    padding-left: 8px;
+	 padding-right: 8px;
+    background-color:#D04F51;
+    border-radius: 3px;
 }
 .login form input[type="email"] {
     border: none;
@@ -169,7 +225,9 @@ il .dropdown li a {
     top: 250px;
 }
 .product {
-    display: flex;
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 0.3%;
     margin-left: 9%;
@@ -398,7 +456,7 @@ il .dropdown li a {
     color: #ffffff;
     font-size: 22px;
     font-weight: 400;
-    padding: 0px 12px;
+    padding: 4px 24px;
     display: inline-block;
     margin: 45px;
 }

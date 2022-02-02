@@ -50,10 +50,11 @@
 		        <h4><a href="register.html" style="text-decoration: none">Register</a></h4>
 	          </div>
 	        </div>
-		    
+		    <div class="button">X</div>
 	      </div>
+			  
 	  </div>
-      <a href="#" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
+      <a href="mycart.html" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
       <div id="search-box">
         <form action="#" class="search-form">
           <input type="search" name="search" placeholder="Search Products.." id="search">
@@ -109,7 +110,16 @@
 		});
 		$(".icon-1").on("click", function(){
 			$(".register, .icon-1 span").fadeToggle();
-		});
+			});
+		 var down = document.getElementById("GFG");
+        var el = document.querySelector('.button');
+         
+        el.addEventListener('click', function () {
+            var el2 = document.querySelector('.register');
+            el2.style.display = "none";
+        });
+		
+		
 	})
 
 </script> 
