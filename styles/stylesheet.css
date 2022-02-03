@@ -5,6 +5,77 @@
     margin: 0px;
    
 }
+.terms {
+	text-align: justify;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	grid-row-gap: 20px;
+	padding: 50px 0px;
+	
+  color: #424242;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+	word-break: break-all;
+}
+.terms ol{
+	margin-left: 40px;
+}
+.terms ol li{
+	margin: 6px 0px;
+}
+.return-policy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0px;
+	text-align: justify;
+
+  color: #424242;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.return-policy p{
+	margin: 6px 0px;
+}
+.return-policy h1 , .terms h1{
+	margin-bottom: 20px;
+	font-size: 28px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
+}
+.center p {
+	padding-left: 55px;
+}
+.width691 {
+	width: 691px;
+	border: 0;
+}
+.width119{
+	width: 119px;
+}
+.width193{
+	width: 193px;
+}
+.width65 {
+	width: 65px;
+}
+.height32 {
+	height: 32px;
+}
+.height119 {
+	height:119px;
+}
+.height164 {
+	height: 164px;
+}
+.height72 {
+	height: 72px;
+}
 .float {
     background-color: rgba(103, 48, 142, 0.99);
     padding-bottom: 3px;
@@ -660,4 +731,64 @@ il .dropdown li a {
 .details {
     row-gap: 2px;
     display: grid;
+}
+.privacy-policy-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 950px;
+    color: #1B1B1B;
+    border-right: 1px solid #6d6c6c;
+    padding-right: 50px;
+	margin: 50px 38px 50px 0px;
+	font-family: 'Roboto', sans-serif;
+}
+.privacy-policy-wrapper p{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.privacy-policy-wrapper ul li{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	margin:6px 0px 6px 44px;
+}
+.privacy-policy-wrapper h3 , .privacy-section h3{
+	font-size: 24px;
+	line-height: 24px;
+	
+}
+.privacy-policy-wrapper a , .privacy-section a ,.terms a{
+	font-size: 18px;
+	color: rgba(103, 48, 142, 0.99);
+	font-weight: 400;
+}
+.privacy-policy-wrapper td{
+	margin-right: 20px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.privacy-policy {
+	display: flex;
+	text-align: justify;
+	word-break: break-all;
+}
+
+.privacy-section {
+	margin-top: 100px;
+	padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+    position: sticky;
+    top: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.privacy-section ul{
+display: flex;
+	flex-direction: column;
+	grid-row-gap: 20px;	
 }

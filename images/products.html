@@ -5,42 +5,64 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Untitled Document</title>
 <!-- InstanceEndEditable -->
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;1,100;1,200;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet.css">
+<link href="../Montserrat-Bold.ttf" rel="stylesheet">
+<link rel="stylesheet" href="../styles/stylesheet.css">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+<script src="../scripts/jquery-3.6.0.min.js"> </script>
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;1,100;1,200;1,300&display=swap');
+</style>
 </head>
 
 <body>
 <header class="wrapper">
   <nav class="nav content-wd">
-    <div id="logo"><img src="images/logo1.png"  width="125" height="53" alt="logo"></div>
+    <div id="logo"><img src="logo1.png"  width="125" height="53" alt="logo"></div>
     <ul>
-      <li class="Home"><a href="index.html">Home</a> </li>
-      <li class="hasdropdown"><a href="products.html">Our Products</a>
+      <li class="Home"><a href="../index.html">Home</a> </li>
+      <li class="hasdropdown"><a href="../products.html">Our Products</a>
         <ul class="dropdown">
-          <li><a href="products.html">MOJITO</a></li>
-          <li><a href="products.html">FRUIT TWIST</a></li>
-          <li><a href="products.html">ICE TEA</a></li>
-          <li><a href="products.html">JAMS</a></li>
-          <li><a href="products.html">CRUSHES</a></li>
-          <li><a href="products.html">SAUSES</a></li>
-          <li><a href="products.html">SWEET CHIILI CHUTNEYS</a></li>
-          <li><a href="products.html">FRUIT FILLINGS</a></li>
+          <li><a href="../products.html">MOJITO</a></li>
+          <li><a href="../products.html">FRUIT TWIST</a></li>
+          <li><a href="../products.html">ICE TEA</a></li>
+          <li><a href="../products.html">JAMS</a></li>
+          <li><a href="../products.html">CRUSHES</a></li>
+          <li><a href="../products.html">SAUSES</a></li>
+          <li><a href="../products.html">SWEET CHIILI CHUTNEYS</a></li>
+          <li><a href="../products.html">FRUIT FILLINGS</a></li>
         </ul>
       </li>
-      <li><a href="reciepies.html">Recipies</a> </li>
-      <li><a href="whoweare-AboutUs.html">Who We Are</a> </li>
-      <li><a href="contactus.html">Contact us</a> </li>
+      <li><a href="../reciepies.html">Recipies</a> </li>
+      <li><a href="../whoweare-AboutUs.html">Who We Are</a> </li>
+      <li><a href="../contactus.html">Contact us</a> </li>
     </ul>
-    <div class="icons"> <a href="#" class="icon-1">account-icon</a>
-      <div class="register"></div>
-      <a href="#" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
-      <form action="#" class="search-form">
-        <input type="search" name="search" placeholder="Search Products..">
-        <input type="submit" value="search">
-      </form>
+    <div class="icons"> <a href="#" class="icon-1">account-icon<span>X</span></a>
+      
+		
+		  <div class="register"><div class="flex"><div class="sec"><a href="../Sign-In.html"><div class="sign-in reg" ></div></a>
+		    <div class="text1">
+				<h4><a href="../Sign-In.html" style="text-decoration: none">Sign In</a></h4>
+	        </div>
+		    </div>
+		    <div class="sec">
+		      <a href="../register.html"><div class="new-account reg"></div></a>
+		      
+		      <div class="text2">
+		        <h4><a href="../register.html" style="text-decoration: none">Register</a></h4>
+	          </div>
+	        </div>
+		    <div class="button">X</div>
+	      </div>
+			  
+	  </div>
+      <a href="../mycart.html" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
+      <div id="search-box">
+        <form action="#" class="search-form">
+          <input type="search" name="search" placeholder="Search Products.." id="search">
+          <input type="submit" value="search">
+        </form>
+      </div>
     </div>
   </nav>
 </header>
@@ -133,12 +155,12 @@
 <footer>
   <div class="footerbg">
     <div class="footer content-wd">
-      <div class="logo"> <img src="images/logo1.png" alt=""> </div>
+      <div class="logo"> <img src="logo1.png" alt=""> </div>
       <div class="line">
         <hr>
       </div>
       <div class="footertext">
-        <p><a href="index.html">Home </a>. <a href="whoweare-AboutUs.html">About Us </a>. <a href="reciepies.html" >Recipies </a> . <a href="notfound">Downloads </a> .<a href="notfound"> Distributors </a> .<a href="contactus.html" > contact us </a> . <a href="#">my account</a> </p>
+        <p><a href="../index.html">Home </a>. <a href="../whoweare-AboutUs.html">About Us </a>. <a href="../reciepies.html" >Recipies </a> . <a href="notfound">Downloads </a> .<a href="notfound"> Distributors </a> .<a href="../contactus.html" > contact us </a> . <a href="#">my account</a> </p>
         <p  style="
     margin-left: 135px;
     margin-top: 40px;
@@ -152,9 +174,21 @@
 	$(document).ready(function(){
 		$(".icon-3").on("click", function(){
 			$(".search-form, .icon-3 span").fadeToggle();	
-		})
+		});
+		$(".icon-1").on("click", function(){
+			$(".register, .icon-1 span").fadeToggle();
+			});
+		 var down = document.getElementById("GFG");
+        var el = document.querySelector('.button');
+         
+        el.addEventListener('click', function () {
+            var el2 = document.querySelector('.register');
+            el2.style.display = "none";
+        });
+		
+		
 	})
-	
+
 </script> 
 <!-- InstanceBeginEditable name="EditScriptRegion2" --> 
 	
