@@ -6,8 +6,13 @@
     margin: 0px;
    
 }
-#body {
+body {
 	min-width: 1280px;
+}
+.footertext2 p {
+	    
+    margin-left: 235px;
+    margin-top: 20px;
 }
 .terms {
 	text-align: justify;
