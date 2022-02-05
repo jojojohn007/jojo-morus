@@ -215,7 +215,6 @@ body {
 #logo {}
 .wrapper {
     width: 100%;
-    background-color: #FCF6F6;
     height: auto;
 }
 .nav {
@@ -487,7 +486,7 @@ il .dropdown li a {
 .text {
     width: 64%;
     margin-left: 260px;
-    margin-top: -20px;
+    margin-top: -65px;
     font-size: 22px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -511,6 +510,9 @@ il .dropdown li a {
 }
 .logo3 {
     display: inline-block;
+}
+.logo {
+	margin-top: 45px ;
 }
 .line {
     width: 100%;
@@ -746,7 +748,7 @@ il .dropdown li a {
     font-weight: 400;
     padding: 5px 12px;
     display: inline-block;
-    margin: 45px;
+    margin-bottom: 45px;
 }
 .details {
     row-gap: 2px;
