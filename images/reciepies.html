@@ -5,20 +5,15 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Untitled Document</title>
 <!-- InstanceEndEditable -->
-
 <link rel="stylesheet" href="../styles/stylesheet.css">
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 <script src="../scripts/jquery-3.6.0.min.js"> </script>
-	<style>
-
-</style>
 </head>
 
-<body>
-	<div class="wrapper">
-<header >
-  <nav class="nav">
+<body> 
+<header class="wrapper" >
+  <nav class="nav content-wd">
     <div id="logo"><img src="logo1.png"  width="125" height="53" alt="logo"></div>
     <ul>
       <li class="Home"><a href="../index.html">Home</a> </li>
@@ -39,34 +34,35 @@
       <li><a href="../contactus.html">Contact us</a> </li>
     </ul>
     <div class="icons"> <a href="#" class="icon-1">account-icon<span>X</span></a>
-      
-		
-		  <div class="register"><div class="flex"><div class="sec"><a href="../Sign-In.html"><div class="sign-in reg" ></div></a>
-		    <div class="text1">
-				<h4><a href="../Sign-In.html" style="text-decoration: none">Sign In</a></h4>
-	        </div>
-		    </div>
-		    <div class="sec">
-		      <a href="../register.html"><div class="new-account reg"></div></a>
-		      
-		      <div class="text2">
-		        <h4><a href="../register.html" style="text-decoration: none">Register</a></h4>
-	          </div>
-	        </div>
-		    <div class="button">X</div>
-	      </div>
-			  
-	  </div>
+      <div class="register">
+        <div class="flex">
+          <div class="sec"><a href="../Sign-In.html">
+            <div class="sign-in reg" ></div>
+            </a>
+            <div class="text1">
+              <h4><a href="../Sign-In.html" style="text-decoration: none">Sign In</a></h4>
+            </div>
+          </div>
+          <div class="sec"> <a href="../register.html">
+            <div class="new-account reg"></div>
+            </a>
+            <div class="text2">
+              <h4><a href="../register.html" style="text-decoration: none">Register</a></h4>
+            </div>
+          </div>
+          <div class="button">X</div>
+        </div>
+      </div>
       <a href="../mycart.html" class="icon-2">shopping-icon</a> <a href="#" class="icon-3" ><span>X</span></a>
       <div id="search-box" style="display: block;">
-		  <div style="display: flex">
-        <form action="#" class="search-form">
-          <div style="display: flex">
-            <input type="search" name="search" placeholder="Search Products.." id="search">
-            <input type="submit" value="search">
-          </div>
-        </form>
-		  </div>
+        <div style="display: flex">
+          <form action="#" class="search-form">
+            <div style="display: flex">
+              <input type="search" name="search" placeholder="Search Products.." id="search">
+              <input type="submit" value="search">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </nav>
@@ -172,17 +168,35 @@
         <hr>
       </div>
       <div class="footertext">
-        <p><a href="../index.html">Home </a>. <a href="../whoweare-AboutUs.html">About Us </a>. <a href="../reciepies.html" >Recipies </a> . <a href="https://termify.io">Privacy policy </a> .<a href="https://termify.io"> Return Policy </a> .<a href="../contactus.html" > Contact us </a>.<a href="https://termify.io">Terms Of Service</a> . <a href="../Sign-In.html">My Account</a> </p>
-        <div class="footertext2" ><p>
-    
-Morus Farm  &amp; Foods   Copyright 2019 </p>
-		  </div>
+        <p><a href="../index.html">Home </a>. <a href="../whoweare-AboutUs.html">About Us </a>. <a href="../recipies.html" >Recipies </a> . <a href="https://termify.io">Privacy policy </a> .<a href="https://termify.io"> Return Policy </a> .<a href="../contactus.html" > Contact us </a>.<a href="https://termify.io">Terms Of Service</a> . <a href="../Sign-In.html">My Account</a> </p>
+        <div class="footertext2" >
+          <p> Morus Farm  &amp; Foods   Copyright 2019 </p>
+        </div>
       </div>
     </div>
   </div>
 </footer>
-	</div>
+<script>
 
+	$(document).ready(function(){
+		$(".icon-3").on("click", function(){
+			$(".search-form, .icon-3 span").fadeToggle();	
+		});
+		$(".icon-1").on("click", function(){
+			$(".register, .icon-1 span").fadeToggle();
+			});
+		 var down = document.getElementById("GFG");
+        var el = document.querySelector('.button');
+         
+        el.addEventListener('click', function () {
+            var el2 = document.querySelector('.register');
+            el2.style.display = "none";
+        });
+		
+		
+	})
+
+</script> 
 <!-- InstanceBeginEditable name="EditScriptRegion2" --> 
 	
 <!-- InstanceEndEditable -->
