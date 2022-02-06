@@ -421,6 +421,7 @@ il .dropdown li a {
 }
 .orangebtn2 {
     display: flex;
+	font-family: 'Open Sans', sans-serif;
 }
 .reciepiesbg {
     margin-top: 45px;
@@ -465,6 +466,7 @@ il .dropdown li a {
     margin-top: 45px;
     display: inline-block;
     margin-bottom: 45px;
+	font-family: 'Open Sans', sans-serif;
 }
 .bgrose {
     margin-top: 45px;
@@ -489,7 +491,7 @@ il .dropdown li a {
     margin-top: -40px;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
-    font-weight: 100;
+    font-weight: 400;
     font-style: initial;
 }
 .video img {
