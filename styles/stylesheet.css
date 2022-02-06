@@ -361,7 +361,7 @@ il .dropdown li a {
     font-family: 'Open Sans', sans-serif;
 }
 .bggrey h2 {
-    border-radius: 11px;
+    border-radius: 6px;
     background-color: rgba(103, 48, 142, 0.99);
     color: #ffffff;
     font-size: 25px;
@@ -408,7 +408,7 @@ il .dropdown li a {
     color: #202122;
     font-size: 15px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
 }
 .orngbtn1 {
     background-color: rgba(236, 188, 60, 0.72);
@@ -546,7 +546,7 @@ il .dropdown li a {
     margin-left: 40px;
 }
 .Recipies h2 {
-    border-radius: 11px;
+    border-radius: 6px;
     background-color: rgba(103, 48, 142, 0.99);
     color: #ffffff;
     font-size: 25px;
@@ -600,7 +600,7 @@ il .dropdown li a {
     margin-top: 38px;
 }
 .Recipiesmm {
-    border-radius: 11px;
+    border-radius: 6px;
     background-color: rgba(103, 48, 142, 0.99);
     color: #ffffff;
     font-size: 32px;
@@ -750,7 +750,7 @@ il .dropdown li a {
     align-items: flex-end;
 }
 .social {
-    border-radius: 11px;
+    border-radius: 6px;
     background-color: rgba(103, 48, 142, 0.99);
     color: #ffffff;
     font-size: 26px;
@@ -847,4 +847,5 @@ footer {
 	font-weight: 100;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
+	padding: 3px 12px;
 }
